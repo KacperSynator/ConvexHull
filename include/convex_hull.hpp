@@ -86,7 +86,7 @@ T distanceSquared(Point<T> a, Point<T> b) {
  * @return Points<T> - the convex hull points as a vector or given `points` if its size is less than 3
  */
 template <typename T>
-inline Points<T> convexHull(Points<T> points) {
+Points<T> convexHull(Points<T> points) {
     if (points.size() < 3) {
         return points;
     }

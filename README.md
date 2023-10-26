@@ -1,4 +1,12 @@
-# pwr-racing-entry
+# Convex Hull Algorithm
+This program creates the convex hull from given set of points using [Graham Scan algorithm](https://en.wikipedia.org/wiki/Graham_scan). The algorithm works as on gif below:  
+ ![](https://upload.wikimedia.org/wikipedia/commons/7/71/GrahamScanDemo.gif)  
+By Shiyu Ji - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=54390512
+
+## About code
+The custom `Point` struct which is used to store points, is implemented using templetes. The `convex_hull::convexHull` function which uses `Points` (vector of `Point`) as an argument was also made generic usig templates. So all the code is in [include](include) directory in header files.  
+
+The algorithm was implemented by mostly using iterators and functions from `<algorithm>` std library.
 
 ### Build
 To build the project use CMake:
